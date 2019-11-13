@@ -35,7 +35,6 @@ stages:
         inputs:
           PathtoPublish: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
           publishLocation: 'Container'
-stages:
 - stage: Release
   jobs:
   - job: Release
