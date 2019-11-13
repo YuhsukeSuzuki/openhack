@@ -40,17 +40,11 @@ stages:
         archiveType: 'zip'
         archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
         replaceExistingArchive: true
-    - task: PublishBuildArtifacts@1
+    - task: AzureFunctionApp@1
       inputs:
-        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-- stage: Release
-  jobs:
-  - job: Release
-    steps:
-    - task: AzureRmWebAppDeployment@4
-      inputs:
-        ConnectionType: 'AzureRM'
         azureSubscription: 'AzureFunctions'
         appType: 'functionApp'
-        WebAppName: 'RatingTeam4'
-        packageForLinux: '$(Build.ArtifactStagingDirectory)/**/*/$(Build.BuildId).zip'
+        appName: 'RatingTeam4'
+        package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+
+    
