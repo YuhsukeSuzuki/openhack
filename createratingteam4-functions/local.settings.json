@@ -1,0 +1,18 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=ratingteam417516093;AccountKey=nJFuVCfgvATLsTT68bV7/yL9ETOS+SOYg3dXiFeL5pX/+6yZ+/Rn99kNupYhr18rYDTzua6kvoDXL87M5PD4Zw==",
+    "FUNCTIONS_WORKER_RUNTIME": "java",
+    "FUNCTIONS_EXTENSION_VERSION": "~2",
+    "AzureWebJobsDashboard": "DefaultEndpointsProtocol=https;AccountName=ratingteam417516093;AccountKey=nJFuVCfgvATLsTT68bV7/yL9ETOS+SOYg3dXiFeL5pX/+6yZ+/Rn99kNupYhr18rYDTzua6kvoDXL87M5PD4Zw==",
+    "WEBSITE_RUN_FROM_PACKAGE": "1",
+    "WEBSITE_CONTENTSHARE": "ratingteam41c90630852ab38",
+    "WEBSITE_CONTENTAZUREFILECONNECTIONSTRING": "DefaultEndpointsProtocol=https;AccountName=ratingteam417516093;AccountKey=nJFuVCfgvATLsTT68bV7/yL9ETOS+SOYg3dXiFeL5pX/+6yZ+/Rn99kNupYhr18rYDTzua6kvoDXL87M5PD4Zw=="
+  },
+  "ConnectionStrings": {
+    "AzureCosmosDBConnection": {
+      "ConnectionString": "AccountEndpoint=https://cosmos4.documents.azure.com:443/;AccountKey=00qzuix8buw9KTWDUWfe3q5iYQBkHGzDJO3109OTY9HJ1a8U6wQv9LHX33AIo7OyPL2d3UDOGhtVa3gzD0Ppbg==;",
+      "ProviderName": "System.Data.SqlClient"
+    }
+  }
+}
