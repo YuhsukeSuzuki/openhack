@@ -26,7 +26,7 @@ stages:
           goals: 'package'
       - task: ArchiveFiles@2
         inputs:
-          rootFolderOrFile: '$(Build.BinariesDirectory)'
+          rootFolderOrFile: '$(Build.BinariesDirectory)/target/azure-functions/$(functionAppMvnTargetFolder)'
           includeRootFolder: true
           archiveType: 'zip'
           archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
