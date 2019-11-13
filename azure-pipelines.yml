@@ -42,7 +42,7 @@ stages:
         replaceExistingArchive: true
     - task: PublishBuildArtifacts@1
       inputs:
-        PathtoPublish: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
 - stage: Release
   jobs:
   - job: Release
@@ -53,4 +53,4 @@ stages:
         azureSubscription: 'AzureFunctions'
         appType: 'functionApp'
         WebAppName: 'RatingTeam4'
-        packageForLinux: '$(Build.ArtifactStagingDirectory)/drop/$(Build.BuildId).zip'
+        packageForLinux: '$(Build.ArtifactStagingDirectory)/../drop/$(Build.BuildId).zip'
